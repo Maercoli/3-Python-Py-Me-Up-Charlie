@@ -33,30 +33,31 @@ with open (poll_data,'r') as csvfile:
             vote_list[candidate_list.index(row[2])] += 1
 
 # find vote percentage
-percent_list = [(100/total_votes) * x for x in vote_list]
+percent_list = [(100/total_votes) * n for n in vote_list]
 
 # find the winner
 winner = candidate_list[vote_list.index(max(vote_list))]
 
 # Print to terminal
-print("Election results :")
+print("Election Results")
 print('--------------------------')
-print(f'Total votes: {total_votes}')
-for x in candidate_list:
-    print(x + ": " + str(format(percent_list[candidate_list.index(x)], '.3f'))
-        +"% (" + str(vote_list[candidate_list.index(x)]) +")")
+print(f'Total Votes: {total_votes}')
+for n in candidate_list:
+    print(n + ": " + str(format(percent_list[candidate_list.index(n)], '.3f'))
+        +"% (" + str(vote_list[candidate_list.index(n)]) +")")
+print('--------------------------')
 print(f'Winner: {winner}')
 print('--------------------------')
 
 # export to a text file      
-f = open("elections_analysis.txt","w")
+f = open("PyPoll/analysis/analysis.txt","w")
 f.write('--------------------------\n')
-f.write("Election_results:\n")
+f.write("Election Results\n")
 f.write('--------------------------\n')
-f.write(f'Total_votes:{total_votes}\n')
-for x in candidate_list:
-    f.write(x + ": " + str(format(percent_list[candidate_list.index(x)], '.3f'))
-        +"% (" + str(vote_list[candidate_list.index(x)]) +")\n")
+f.write(f'Total Votes:{total_votes}\n')
+for n in candidate_list:
+    f.write(n + ": " + str(format(percent_list[candidate_list.index(n)], '.3f'))
+        +"% (" + str(vote_list[candidate_list.index(n)]) +")\n")
 f.write('--------------------------\n')
 f.write(f'Winner:{winner}\n')
 f.write('--------------------------\n')

@@ -1,7 +1,7 @@
 --------------------------
-Election_results:
+Election Results
 --------------------------
-Total_votes:3521000
+Total Votes:3521001
 Khan: 63.000% (2218231)
 Correy: 20.000% (704200)
 Li: 14.000% (492940)

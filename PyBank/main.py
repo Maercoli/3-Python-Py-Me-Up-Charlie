@@ -63,7 +63,7 @@ print(f'Greatest Increase in Profit:{great_inc_month} {great_inc}')
 print(f'Greatest Decrease in Profit:{great_dec_mont} {great_dec}')
 
 # write to text file
-f = open("bank_analysis.txt",'w')
+f = open("PyBank/analysis/analysis.txt",'w')
 f.write(f'Financial Analysis\n')
 f.write('------------------------\n')
 f.write(f'Total Months:{total_months}\n')
