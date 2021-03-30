@@ -1,4 +1,4 @@
-# Py Me Up, Charlie: Python Challenges
+# Py Me Up, Charlie: Python
 
 ## Background
 
